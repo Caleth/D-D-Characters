@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [Character].[Characters] (
     [Blob]           XML([Character].[CharacterSheet]) NOT NULL,
     [Modified]       DATETIME       NOT NULL,
-    [Name]           NVARCHAR (255) NOT NULL,
+    [Name]           NVARCHAR (50)  NOT NULL,
     [Age]            AS             ([Character].[Age]([Blob])),
     [Alignment]      AS             ([Character].[Alignment]([Blob])),
     [Appearance]     AS             ([Character].[Appearance]([Blob])),
@@ -27,4 +27,9 @@
     [Wisdom]         AS             ([Character].[Wisdom]([Blob])),
     CONSTRAINT [PK_Characters_NameModified] PRIMARY KEY CLUSTERED ([Name] ASC, [Modified] ASC) WITH (IGNORE_DUP_KEY = ON)
 );
+GO
 
+CREATE PRIMARY XML INDEX [XML_IX_Characters_Blob]
+    ON [Character].[Characters]([Blob])
+    WITH (PAD_INDEX = OFF);
+GO
