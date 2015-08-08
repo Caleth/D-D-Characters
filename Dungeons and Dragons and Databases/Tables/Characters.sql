@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Character].[Characters] (
-    [Blob]           XML            NOT NULL,
+    [Blob]           XML([Character].[CharacterSheet]) NOT NULL,
     [Modified]       DATETIME       NOT NULL,
     [Name]           NVARCHAR (255) NOT NULL,
     [Age]            AS             ([Character].[Age]([Blob])),

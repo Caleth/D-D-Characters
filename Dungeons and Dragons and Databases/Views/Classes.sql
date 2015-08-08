@@ -8,7 +8,7 @@ CREATE VIEW [Reference].[Classes] WITH SCHEMABINDING AS SELECT
 [Revision],
 Data.value('(/*/Flavor)[1]', 'VARCHAR(MAX)') [Flavor],
 Data.value('(/*/Prereqs)[1]', 'VARCHAR(MAX)') [Prereqs],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="_DisplayName"])[1]', 'VARCHAR(MAX)') [_DisplayName],
 Data.value('(/*/specific[@name="_ParentClass"])[1]', 'VARCHAR(MAX)') [_ParentClass],
 Data.value('(/*/specific[@name="_PARSED_CLASS_FEATURE"])[1]', 'VARCHAR(MAX)') [_PARSED_CLASS_FEATURE],

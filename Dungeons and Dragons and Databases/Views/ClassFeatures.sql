@@ -1,4 +1,4 @@
-﻿CREATE VIEW [Reference].[Class Features] WITH SCHEMABINDING AS SELECT
+﻿CREATE VIEW [Reference].[ClassFeatures] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -8,7 +8,7 @@ Data.value('(/*/Category)[1]', 'VARCHAR(MAX)') [Category],
 Data.value('(/*/Flavor)[1]', 'VARCHAR(MAX)') [Flavor],
 Data.value('(/*/Prereqs)[1]', 'VARCHAR(MAX)') [Prereqs],
 Data.value('(/*/print-prereqs)[1]', 'VARCHAR(MAX)') [print-prereqs],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="_CLASSNAME"])[1]', 'VARCHAR(MAX)') [_CLASSNAME],
 Data.value('(/*/specific[@name="_CS_ShortDescription"])[1]', 'VARCHAR(MAX)') [_CS_ShortDescription],
 Data.value('(/*/specific[@name="_DisplayAssociates"])[1]', 'VARCHAR(MAX)') [_DisplayAssociates],

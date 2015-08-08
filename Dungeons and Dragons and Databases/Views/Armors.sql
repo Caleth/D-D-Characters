@@ -6,7 +6,7 @@ CREATE VIEW [Reference].[Armors] WITH SCHEMABINDING AS SELECT
 [Source],
 [Revision],
 Data.value('(/*/Category)[1]', 'VARCHAR(MAX)') [Category],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="Armor Bonus"])[1]', 'VARCHAR(MAX)') [Armor Bonus],
 Data.value('(/*/specific[@name="Armor Category"])[1]', 'VARCHAR(MAX)') [Armor Category],
 Data.value('(/*/specific[@name="Armor Type"])[1]', 'VARCHAR(MAX)') [Armor Type],

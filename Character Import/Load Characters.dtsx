@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ROOK"
   DTS:CreatorName="Rook\Caleth"
-  DTS:DTSID="{B44A6B12-7075-473A-BAD3-8E1A62AB2DD3}"
+  DTS:DTSID="{AA3F6BFA-A6F8-4612-B47B-E78600AFA155}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="12.0.4100.1"
   DTS:LocaleID="2057"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Load Characters"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{EA074DAF-0752-4E2D-BB4F-39A85C464C8F}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{73E743B9-5E55-4205-A834-C316C92E9CE6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -1082,7 +1082,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                         <outputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\Load.Outputs[Output 0].Columns[Name]"
                           dataType="wstr"
-                          length="255"
+                          length="50"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Load.Outputs[Output 0].Columns[Name]"
                           name="Name" />
                         <outputColumn
@@ -1121,7 +1121,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       dataType="System.String"
                       description="The name of the database object to copy data into."
                       expressionType="Notify"
-                      name="BulkInsertTableName">[dbo].[Characters]</property>
+                      name="BulkInsertTableName">[Character].[Characters]</property>
                     <property
                       dataType="System.Boolean"
                       description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
@@ -1194,7 +1194,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                         <inputColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[Name]"
                           cachedDataType="wstr"
-                          cachedLength="255"
+                          cachedLength="50"
                           cachedName="Name"
                           externalMetadataColumnId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Name]"
                           lineageId="Package\Foreach Loop Container\Data Flow Task\Load.Outputs[Output 0].Columns[Name]" />
@@ -1218,8 +1218,146 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                         <externalMetadataColumn
                           refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Name]"
                           dataType="wstr"
-                          length="255"
+                          length="50"
                           name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Age]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Age" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Alignment]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Alignment" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Appearance]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Appearance" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[CarriedMoney]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="CarriedMoney" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Charisma]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Charisma" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Companions]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Companions" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Company]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Company" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Constitution]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Constitution" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Dexterity]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Dexterity" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Experience]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Experience" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Gender]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Gender" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Height]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Height" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Intelligence]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Intelligence" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Level]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Level" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Character-Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Character-Name" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Notes]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Notes" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Player]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Player" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Portrait]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Portrait" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[StoredMoney]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="StoredMoney" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Strength]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Strength" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Traits]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Traits" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Weight]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Weight" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[Wisdom]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Wisdom" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -1289,7 +1427,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="190,42"
           Id="Package\Foreach Loop Container\Data Flow Task\SQL Server Destination"
-          TopLeft="81.5,220.5" />
+          TopLeft="80.5,220.5" />
         <NodeLayout
           Size="158,42"
           Id="Package\Foreach Loop Container\Data Flow Task\Data Conversion"
@@ -1318,7 +1456,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="177,192.5">
+          TopLeft="176.5,192.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

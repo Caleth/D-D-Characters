@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Reference].[References] (
-    [Data]     XML NOT NULL,
+    [Data]     XML([Reference].[RulesElement]) NOT NULL,
     [Name]     AS  ([Reference].[Name]([Data])) PERSISTED NOT NULL,
     [Type]     AS  ([Reference].[Type]([Data])) PERSISTED NOT NULL,
     [Id]       AS  ([Reference].[InternalId]([Data])) PERSISTED NOT NULL,

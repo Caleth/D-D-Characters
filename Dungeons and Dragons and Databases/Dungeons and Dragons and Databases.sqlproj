@@ -25,6 +25,8 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -62,6 +64,7 @@
     <Folder Include="Tables\" />
     <Folder Include="Views\" />
     <Folder Include="Functions\" />
+    <Folder Include="Schema" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\References.sql" />
@@ -71,11 +74,11 @@
     <Build Include="Views\Powers.sql" />
     <Build Include="Views\Feats.sql" />
     <Build Include="Views\Weapons.sql" />
-    <Build Include="Views\Superior Implements.sql" />
+    <Build Include="Views\SuperiorImplements.sql" />
     <Build Include="Views\Armors.sql" />
-    <Build Include="Views\Magic Items.sql" />
+    <Build Include="Views\MagicItems.sql" />
     <Build Include="Views\Skills.sql" />
-    <Build Include="Views\Class Features.sql" />
+    <Build Include="Views\ClassFeatures.sql" />
     <Build Include="Views\Rules.sql" />
     <Build Include="Functions\Reference.Type.sql" />
     <Build Include="Functions\Reference.Source.sql" />
@@ -107,10 +110,17 @@
     <Build Include="Functions\Character.Age.sql" />
     <Build Include="Functions\Reference.Specifics.sql" />
     <Build Include="Views\StatBlock.sql" />
-    <Build Include="Reference.sql" />
-    <Build Include="Character.sql" />
+    <Build Include="Schema\Character.sql" />
+    <Build Include="Schema\Reference.sql" />
+    <Build Include="Schema\Character.CharacterSheet.xsd">
+      <RelationalSchema>Character</RelationalSchema>
+      <XMLSchemaCollectionName>CharacterSheet</XMLSchemaCollectionName>
+    </Build>
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="Dungeons and Dragons and Databases.refactorlog" />
+    <Build Include="Schema\Reference.RulesElement.xsd">
+      <RelationalSchema>Reference</RelationalSchema>
+      <XMLSchemaCollectionName>RulesElement</XMLSchemaCollectionName>
+    </Build>
   </ItemGroup>
 </Project>

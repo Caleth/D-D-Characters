@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [Reference].[Magic Items] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[MagicItems] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -9,7 +9,7 @@ CREATE VIEW [Reference].[Magic Items] WITH SCHEMABINDING AS SELECT
 Data.value('(/*/Category)[1]', 'VARCHAR(MAX)') [Category],
 Data.value('(/*/Flavor)[1]', 'VARCHAR(MAX)') [Flavor],
 Data.value('(/*/Prereqs)[1]', 'VARCHAR(MAX)') [Prereqs],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="_AlternateSlot"])[1]', 'VARCHAR(MAX)') [_AlternateSlot],
 Data.value('(/*/specific[@name="_AlwaysExecute"])[1]', 'VARCHAR(MAX)') [_AlwaysExecute],
 Data.value('(/*/specific[@name="_AssociatedMonsters"])[1]', 'VARCHAR(MAX)') [_AssociatedMonsters],

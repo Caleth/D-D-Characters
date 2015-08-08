@@ -8,7 +8,7 @@ CREATE VIEW [Reference].[Races] WITH SCHEMABINDING AS SELECT
 [Revision],
 Data.value('(/*/Flavor)[1]', 'VARCHAR(MAX)') [Flavor],
 Data.value('(/*/Prereqs)[1]', 'VARCHAR(MAX)') [Prereqs],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="Ability Scores"])[1]', 'VARCHAR(MAX)') [Ability Scores],
 Data.value('(/*/specific[@name="Attitudes and Beliefs"])[1]', 'VARCHAR(MAX)') [Attitudes and Beliefs],
 Data.value('(/*/specific[@name="Average Height"])[1]', 'VARCHAR(MAX)') [Average Height],

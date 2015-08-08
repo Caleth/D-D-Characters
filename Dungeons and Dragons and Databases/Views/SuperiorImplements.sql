@@ -1,12 +1,12 @@
 ﻿
 
-CREATE VIEW [Reference].[Superior Implements] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[SuperiorImplements] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
 [Source],
 [Revision],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="_DamageType"])[1]', 'VARCHAR(MAX)') [_DamageType],
 Data.value('(/*/specific[@name="Full Text"])[1]', 'VARCHAR(MAX)') [Full Text],
 Data.value('(/*/specific[@name="Gold"])[1]', 'VARCHAR(MAX)') [Gold],

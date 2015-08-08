@@ -8,7 +8,7 @@ CREATE VIEW [Reference].[Weapons] WITH SCHEMABINDING AS SELECT
 [Revision],
 Data.value('(/*/Category)[1]', 'VARCHAR(MAX)') [Category],
 Data.value('(/*/Prereqs)[1]', 'VARCHAR(MAX)') [Prereqs],
-Data.value('(/*/rules)[1]', 'VARCHAR(MAX)') [rules],
+Data.query('(/*/rules)') [rules],
 Data.value('(/*/specific[@name="_AlternateSlot"])[1]', 'VARCHAR(MAX)') [_AlternateSlot],
 Data.value('(/*/specific[@name="_IncludeImprovised"])[1]', 'VARCHAR(MAX)') [_IncludeImprovised],
 Data.value('(/*/specific[@name="_Primary End"])[1]', 'VARCHAR(MAX)') [_Primary End],
