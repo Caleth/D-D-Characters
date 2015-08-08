@@ -106,5 +106,6 @@
     <Build Include="Functions\Character_Alignment.sql" />
     <Build Include="Functions\Character_Age.sql" />
     <Build Include="Functions\GetSpecifics.sql" />
+    <Build Include="Views\StatBlock.sql" />
   </ItemGroup>
 </Project>
