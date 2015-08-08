@@ -1,5 +1,5 @@
 ﻿
-CREATE VIEW [dbo].[Armors] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Armors] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -19,6 +19,6 @@ Data.value('(/*/specific[@name="Special"])[1]', 'VARCHAR(MAX)') [Special],
 Data.value('(/*/specific[@name="Speed"])[1]', 'VARCHAR(MAX)') [Speed],
 Data.value('(/*/specific[@name="Weight"])[1]', 'VARCHAR(MAX)') [Weight],
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Armor'
 

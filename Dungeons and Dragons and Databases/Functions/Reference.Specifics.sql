@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION GetSpecifics 
+﻿CREATE FUNCTION [Reference].[Specifics] 
 (	
 	@Id VARCHAR(50)
 )
@@ -7,6 +7,7 @@ WITH SCHEMABINDING
 AS
 RETURN 
 (
-	SELECT Child.query('.') specifics FROM dbo.Reference
+	SELECT Child.query('.') specifics 
+	FROM [Reference].[References]
 	CROSS APPLY [Data].nodes('/RulesElement[internal-id = sql:variable("@Id")]/*') AS XMLItem(Child)
 )

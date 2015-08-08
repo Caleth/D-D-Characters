@@ -1,5 +1,5 @@
 ﻿
-CREATE FUNCTION dbo.Reference_Source(@xml xml) RETURNS varchar(200)
+CREATE FUNCTION [Reference].[Source](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

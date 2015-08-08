@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [dbo].[Skills] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Skills] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -8,7 +8,7 @@ CREATE VIEW [dbo].[Skills] WITH SCHEMABINDING AS SELECT
 [Revision],
 Data.value('(/*/specific[@name="Key Ability"])[1]', 'VARCHAR(MAX)') [Key Ability],
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Skill'
 
 

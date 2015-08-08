@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION dbo.Character_Wisdom(@xml xml) RETURNS varchar(200)
+﻿CREATE FUNCTION [Character].[Wisdom](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

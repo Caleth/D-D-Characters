@@ -64,7 +64,7 @@
     <Folder Include="Functions\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Reference.sql" />
+    <Build Include="Tables\References.sql" />
     <Build Include="Tables\Characters.sql" />
     <Build Include="Views\Classes.sql" />
     <Build Include="Views\Races.sql" />
@@ -77,35 +77,40 @@
     <Build Include="Views\Skills.sql" />
     <Build Include="Views\Class Features.sql" />
     <Build Include="Views\Rules.sql" />
-    <Build Include="Functions\Reference_Type.sql" />
-    <Build Include="Functions\Reference_Source.sql" />
-    <Build Include="Functions\Reference_Revision.sql" />
-    <Build Include="Functions\Reference_Name.sql" />
-    <Build Include="Functions\Reference_Id.sql" />
-    <Build Include="Functions\Character_Wisdom.sql" />
-    <Build Include="Functions\Character_Weight.sql" />
-    <Build Include="Functions\Character_Traits.sql" />
-    <Build Include="Functions\Character_Strength.sql" />
-    <Build Include="Functions\Character_StoredMoney.sql" />
-    <Build Include="Functions\Character_Portrait.sql" />
-    <Build Include="Functions\Character_Player.sql" />
-    <Build Include="Functions\Character_Notes.sql" />
-    <Build Include="Functions\Character_name.sql" />
-    <Build Include="Functions\Character_Level.sql" />
-    <Build Include="Functions\Character_Intelligence.sql" />
-    <Build Include="Functions\Character_Height.sql" />
-    <Build Include="Functions\Character_Gender.sql" />
-    <Build Include="Functions\Character_Experience.sql" />
-    <Build Include="Functions\Character_Dexterity.sql" />
-    <Build Include="Functions\Character_Constitution.sql" />
-    <Build Include="Functions\Character_Company.sql" />
-    <Build Include="Functions\Character_Companions.sql" />
-    <Build Include="Functions\Character_Charisma.sql" />
-    <Build Include="Functions\Character_CarriedMoney.sql" />
-    <Build Include="Functions\Character_Appearance.sql" />
-    <Build Include="Functions\Character_Alignment.sql" />
-    <Build Include="Functions\Character_Age.sql" />
-    <Build Include="Functions\GetSpecifics.sql" />
+    <Build Include="Functions\Reference.Type.sql" />
+    <Build Include="Functions\Reference.Source.sql" />
+    <Build Include="Functions\Reference.Revision.sql" />
+    <Build Include="Functions\Reference.Name.sql" />
+    <Build Include="Functions\Reference.InternalId.sql" />
+    <Build Include="Functions\Character.Wisdom.sql" />
+    <Build Include="Functions\Character.Weight.sql" />
+    <Build Include="Functions\Character.Traits.sql" />
+    <Build Include="Functions\Character.Strength.sql" />
+    <Build Include="Functions\Character.StoredMoney.sql" />
+    <Build Include="Functions\Character.Portrait.sql" />
+    <Build Include="Functions\Character.Player.sql" />
+    <Build Include="Functions\Character.Notes.sql" />
+    <Build Include="Functions\Character.Name.sql" />
+    <Build Include="Functions\Character.Level.sql" />
+    <Build Include="Functions\Character.Intelligence.sql" />
+    <Build Include="Functions\Character.Height.sql" />
+    <Build Include="Functions\Character.Gender.sql" />
+    <Build Include="Functions\Character.Experience.sql" />
+    <Build Include="Functions\Character.Dexterity.sql" />
+    <Build Include="Functions\Character.Constitution.sql" />
+    <Build Include="Functions\Character.Company.sql" />
+    <Build Include="Functions\Character.Companions.sql" />
+    <Build Include="Functions\Character.Charisma.sql" />
+    <Build Include="Functions\Character.CarriedMoney.sql" />
+    <Build Include="Functions\Character.Appearance.sql" />
+    <Build Include="Functions\Character.Alignment.sql" />
+    <Build Include="Functions\Character.Age.sql" />
+    <Build Include="Functions\Reference.Specifics.sql" />
     <Build Include="Views\StatBlock.sql" />
+    <Build Include="Reference.sql" />
+    <Build Include="Character.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Dungeons and Dragons and Databases.refactorlog" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION dbo.Character_Portrait(@xml xml) RETURNS varchar(200)
+﻿CREATE FUNCTION [Character].[Portrait](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

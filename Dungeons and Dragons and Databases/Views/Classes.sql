@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [dbo].[Classes] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Classes] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -42,7 +42,7 @@ Data.value('(/*/specific[@name="Trained Skills"])[1]', 'VARCHAR(MAX)') [Trained 
 Data.value('(/*/specific[@name="Trait Package"])[1]', 'VARCHAR(MAX)') [Trait Package],
 Data.value('(/*/specific[@name="Weapon Proficiencies"])[1]', 'VARCHAR(MAX)') [Weapon Proficiencies],
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Class'
 
 

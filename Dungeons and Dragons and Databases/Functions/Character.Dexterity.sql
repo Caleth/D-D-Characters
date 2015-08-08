@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION dbo.Character_Dexterity(@xml xml) RETURNS varchar(200)
+﻿CREATE FUNCTION [Character].[Dexterity](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [dbo].[Magic Items] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Magic Items] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -59,7 +59,7 @@ Data.value('(/*/specific[@name="Weapon"])[1]', 'VARCHAR(MAX)') [Weapon],
 Data.value('(/*/specific[@name="WeaponEquiv"])[1]', 'VARCHAR(MAX)') [WeaponEquiv],
 Data.value('(/*/specific[@name="Weight"])[1]', 'VARCHAR(MAX)') [Weight],
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Magic Item'
 
 

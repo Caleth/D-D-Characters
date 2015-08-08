@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION dbo.Character_Gender(@xml xml) RETURNS varchar(200)
+﻿CREATE FUNCTION [Character].[Gender](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

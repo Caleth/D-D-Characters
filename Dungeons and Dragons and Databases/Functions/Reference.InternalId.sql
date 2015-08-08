@@ -1,5 +1,5 @@
 ﻿
-CREATE FUNCTION dbo.Reference_Id(@xml xml) RETURNS varchar(200)
+CREATE FUNCTION [Reference].[InternalId](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

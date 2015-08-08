@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [dbo].[Weapons] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Weapons] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -35,7 +35,7 @@ Data.value('(/*/specific[@name="Size"])[1]', 'VARCHAR(MAX)') [Size],
 Data.value('(/*/specific[@name="Weapon Category"])[1]', 'VARCHAR(MAX)') [Weapon Category],
 Data.value('(/*/specific[@name="Weight"])[1]', 'VARCHAR(MAX)') [Weight],
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Weapon'
 
 

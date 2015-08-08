@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION dbo.Character_Weight(@xml xml) RETURNS varchar(200)
+﻿CREATE FUNCTION [Character].[Weight](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION dbo.Character_Age(@xml xml) RETURNS varchar(200)
+﻿CREATE FUNCTION [Character].[Age](@xml xml) RETURNS varchar(200)
 WITH SCHEMABINDING
 AS
 BEGIN

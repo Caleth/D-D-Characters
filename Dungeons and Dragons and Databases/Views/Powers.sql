@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [dbo].[Powers] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Powers] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -11,7 +11,7 @@ Data.value('(/*/Flavor)[1]', 'VARCHAR(MAX)') [Flavor],
 Data.value('(/*/Prereqs)[1]', 'VARCHAR(MAX)') [Prereqs],
 Data.value('(/*/print-prereqs)[1]', 'VARCHAR(MAX)') [print-prereqs],
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Power'
 
 

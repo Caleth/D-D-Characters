@@ -1,7 +1,7 @@
 ﻿
 
 
-CREATE VIEW [dbo].[Rules] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Rules] WITH SCHEMABINDING AS SELECT
 [Name],
 [Id],
 Rules.value('local-name(.)', 'VARCHAR(MAX)') [local-name],
@@ -34,7 +34,7 @@ Rules.value('(@half-point)[1]', 'VARCHAR(MAX)') [half-point],
 Rules.value('(@select)[1]', 'VARCHAR(MAX)') [select],
 Rules.value('(@Level)[1]', 'VARCHAR(MAX)') [Level],
 Rules.value('(@alias)[1]', 'VARCHAR(MAX)') [alias]
-FROM dbo.Reference CROSS APPLY
+FROM [Reference].[References] CROSS APPLY
 	Data.nodes('/*/rules/*') AS Data(Rules)
 
 

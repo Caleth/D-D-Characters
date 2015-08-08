@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="b60e2f99-1265-4417-a061-e2557c99eb25" ChangeDateTime="08/08/2015 00:22:14">
+    <Property Name="ElementName" Value="[dbo].[Magic Items]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[MagicItems]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e14f17be-de3e-44d0-902e-27d2dc064c7b" ChangeDateTime="08/08/2015 00:24:05">
+    <Property Name="ElementName" Value="[dbo].[Class Features]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ClassFeatures]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="ab27f49e-853e-45e7-88f4-163813627f52" ChangeDateTime="08/08/2015 00:27:25">
+    <Property Name="ElementName" Value="[dbo].[Characters]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0f65cc6f-5f8a-4239-8e29-b7fa2af20604" ChangeDateTime="08/08/2015 00:27:57">
+    <Property Name="ElementName" Value="[dbo].[Reference]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c53843cb-8388-4898-8d23-39b0eddee2c5" ChangeDateTime="08/08/2015 00:28:13">
+    <Property Name="ElementName" Value="[dbo].[Character_Age]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3d2832e6-804c-45b5-abe0-6dc8911377c0" ChangeDateTime="08/08/2015 00:28:25">
+    <Property Name="ElementName" Value="[Character].[Character_Age]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Age]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4fd39639-be44-402e-84a8-fa82b09de74a" ChangeDateTime="08/08/2015 00:28:52">
+    <Property Name="ElementName" Value="[dbo].[Character_Alignment]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a14e86f9-736e-43f1-a6f6-042aa757dc79" ChangeDateTime="08/08/2015 00:29:06">
+    <Property Name="ElementName" Value="[Character].[Character_Alignment]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Alignment]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="df480215-9a85-448b-a36b-1debb1c504c2" ChangeDateTime="08/08/2015 00:29:51">
+    <Property Name="ElementName" Value="[dbo].[Character_Appearance]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Appearance]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="7e145512-63d5-470a-8dc7-7e6049af2244" ChangeDateTime="08/08/2015 00:30:08">
+    <Property Name="ElementName" Value="[dbo].[Appearance]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="cc65009c-0ce9-434d-abf8-8ecbef1e0e2f" ChangeDateTime="08/08/2015 00:31:15">
+    <Property Name="ElementName" Value="[dbo].[Character_CarriedMoney]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b899131c-8245-4ee2-ba52-8d7b46b454ec" ChangeDateTime="08/08/2015 00:31:26">
+    <Property Name="ElementName" Value="[Character].[Character_CarriedMoney]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[CarriedMoney]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e7c12309-b6da-4805-a830-2503f5de30db" ChangeDateTime="08/08/2015 00:31:57">
+    <Property Name="ElementName" Value="[dbo].[Character_Charisma]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Charisma]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="a05d13ff-6579-4b0c-8c70-b1ec29032518" ChangeDateTime="08/08/2015 00:32:02">
+    <Property Name="ElementName" Value="[dbo].[Charisma]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="61aa2bb8-c345-48ad-b1be-ca1d9b3d38b7" ChangeDateTime="08/08/2015 00:32:54">
+    <Property Name="ElementName" Value="[dbo].[Character_Companions]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="00f34128-6f33-45b3-a14e-92d1e2af7418" ChangeDateTime="08/08/2015 00:33:03">
+    <Property Name="ElementName" Value="[Character].[Character_Companions]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Companions]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e4023873-c7e5-4613-a9d4-f9a3ec21cadf" ChangeDateTime="08/08/2015 00:33:37">
+    <Property Name="ElementName" Value="[dbo].[Character_Company]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1ac17aec-14d0-40fa-88d3-b0757500b162" ChangeDateTime="08/08/2015 00:33:46">
+    <Property Name="ElementName" Value="[Character].[Character_Company]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Company]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2714e48f-5db3-480e-874b-258405ee259b" ChangeDateTime="08/08/2015 00:34:50">
+    <Property Name="ElementName" Value="[dbo].[Character_Constitution]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Constitution]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c01a481f-69c9-400f-844c-d75188b7aa6c" ChangeDateTime="08/08/2015 00:34:56">
+    <Property Name="ElementName" Value="[dbo].[Constitution]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="d88dfef5-0725-4ddf-80a6-e6b333ab1769" ChangeDateTime="08/08/2015 00:41:20">
+    <Property Name="ElementName" Value="[dbo].[GetSpecifics]" />
+    <Property Name="ElementType" Value="SqlInlineTableValuedFunction" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d3085571-ddb6-4bcc-bbee-a9207c1961e6" ChangeDateTime="08/08/2015 00:41:30">
+    <Property Name="ElementName" Value="[Reference].[GetSpecifics]" />
+    <Property Name="ElementType" Value="SqlInlineTableValuedFunction" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Specifics]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="7c4b08bb-ef97-4f20-8e15-b208248844f0" ChangeDateTime="08/08/2015 00:42:26">
+    <Property Name="ElementName" Value="[dbo].[Character_Dexterity]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="07dd9ba0-4d1c-491a-9a52-7b353d58d460" ChangeDateTime="08/08/2015 00:43:20">
+    <Property Name="ElementName" Value="[Character].[Character_Dexterity]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Dexterity]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="aeb6dec5-4345-4e73-9484-ec668e20dfd8" ChangeDateTime="08/08/2015 00:44:22">
+    <Property Name="ElementName" Value="[dbo].[Character_Experience]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a0edb32-86c3-44a0-9c90-72da86e69ea8" ChangeDateTime="08/08/2015 00:44:30">
+    <Property Name="ElementName" Value="[Character].[Character_Experience]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Experience]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e148b13-62b1-4982-af70-880f364f8255" ChangeDateTime="08/08/2015 00:44:43">
+    <Property Name="ElementName" Value="[dbo].[Character_Gender]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="Gender" />
+  </Operation>
+  <Operation Name="Move Schema" Key="201bbcda-528f-4b74-a255-fcdaf663ff80" ChangeDateTime="08/08/2015 00:44:50">
+    <Property Name="ElementName" Value="[dbo].[Gender]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="db6e69b2-2622-4073-9023-9a870204ede6" ChangeDateTime="08/08/2015 00:44:57">
+    <Property Name="ElementName" Value="[Character].[Gender]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Gender]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="88e2e0b9-411f-4b71-a356-4475b470779c" ChangeDateTime="08/08/2015 00:47:55">
+    <Property Name="ElementName" Value="[dbo].[Character_Height]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5bd3206c-233c-406b-9d5c-1a68e09307d9" ChangeDateTime="08/08/2015 00:48:02">
+    <Property Name="ElementName" Value="[Character].[Character_Height]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Height]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2f94d6d8-d4cc-4342-9f80-5cb50050f89d" ChangeDateTime="08/08/2015 00:50:04">
+    <Property Name="ElementName" Value="[dbo].[Character_Intelligence]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Intelligence]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="fa45c803-1836-4525-8c3b-e687ac17b246" ChangeDateTime="08/08/2015 00:50:09">
+    <Property Name="ElementName" Value="[dbo].[Intelligence]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5be8e83f-88be-46b1-a5e7-cc594e6f6a2f" ChangeDateTime="08/08/2015 00:50:25">
+    <Property Name="ElementName" Value="[dbo].[Character_Level]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Level]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8ec5c372-9a8a-4266-921b-4dfe05184e71" ChangeDateTime="08/08/2015 00:50:30">
+    <Property Name="ElementName" Value="[dbo].[Level]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e902305b-c222-4d22-bc55-0bec991777b9" ChangeDateTime="08/08/2015 00:50:41">
+    <Property Name="ElementName" Value="[dbo].[Character_name]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="51d09607-80b8-482e-940c-13515b5af850" ChangeDateTime="08/08/2015 00:50:51">
+    <Property Name="ElementName" Value="[Character].[Character_name]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Name]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="9fd19bbe-d76f-47e7-a63f-3d8ca0d4d864" ChangeDateTime="08/08/2015 00:58:14">
+    <Property Name="ElementName" Value="[dbo].[Character_Notes]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7afffab1-0c6a-4359-a3ad-913106ce2ef8" ChangeDateTime="08/08/2015 00:58:21">
+    <Property Name="ElementName" Value="[Character].[Character_Notes]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Notes]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="c6f9e964-57f7-427f-aa68-e455f673a866" ChangeDateTime="08/08/2015 00:58:37">
+    <Property Name="ElementName" Value="[dbo].[Character_Player]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b672a3b2-ae7a-430b-be2a-374a6b562466" ChangeDateTime="08/08/2015 00:58:46">
+    <Property Name="ElementName" Value="[Character].[Character_Player]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Player]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e302e496-b3e0-4225-9e7f-79337ef92dfc" ChangeDateTime="08/08/2015 01:07:23">
+    <Property Name="ElementName" Value="[dbo].[Character_Portrait]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="149064bc-5314-4ad6-874c-653bcd207f13" ChangeDateTime="08/08/2015 01:07:32">
+    <Property Name="ElementName" Value="[Character].[Character_Portrait]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Portrait]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8aed3af1-7f28-4140-b974-66b3be4aa286" ChangeDateTime="08/08/2015 01:07:43">
+    <Property Name="ElementName" Value="[dbo].[Character_StoredMoney]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="09def83a-3c1f-4413-9be9-5faf4b628b58" ChangeDateTime="08/08/2015 01:07:49">
+    <Property Name="ElementName" Value="[Character].[Character_StoredMoney]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="StoredMoney" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a97437ea-f9c8-4b85-b33e-585ded6814fe" ChangeDateTime="08/08/2015 01:07:55">
+    <Property Name="ElementName" Value="[Character].[StoredMoney]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[StoredMoney]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="38a629c0-c4a7-46d4-b0d7-e32dd35bc83d" ChangeDateTime="08/08/2015 01:08:55">
+    <Property Name="ElementName" Value="[dbo].[Character_Strength]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0f3b828c-4516-4ffc-b03d-607b829ca7c8" ChangeDateTime="08/08/2015 01:09:01">
+    <Property Name="ElementName" Value="[Character].[Character_Strength]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Strength]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="ee841c4f-fe5e-4534-b9cf-bfe47c1cfdd0" ChangeDateTime="08/08/2015 01:09:11">
+    <Property Name="ElementName" Value="[dbo].[Character_Traits]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="08a4d1ab-ef73-44f5-be17-9e0460950498" ChangeDateTime="08/08/2015 01:09:32">
+    <Property Name="ElementName" Value="[Character].[Character_Traits]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Traits]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="02e5de31-9136-4cee-91d3-3a6a6f0b74d7" ChangeDateTime="08/08/2015 01:10:18">
+    <Property Name="ElementName" Value="[dbo].[Character_Weight]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="30d9edaf-ddee-4b3a-8773-20d4cb4fb250" ChangeDateTime="08/08/2015 01:10:25">
+    <Property Name="ElementName" Value="[Character].[Character_Weight]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Weight]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e88ea379-5a10-4a3a-a9f8-a6a989da19ba" ChangeDateTime="08/08/2015 01:11:28">
+    <Property Name="ElementName" Value="[dbo].[Character_Wisdom]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f6418786-0f09-41ab-8a75-40c116338648" ChangeDateTime="08/08/2015 01:11:35">
+    <Property Name="ElementName" Value="[Character].[Character_Wisdom]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Character]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Wisdom]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="dc51912c-e1f7-4cb2-97dc-acf61e8aed35" ChangeDateTime="08/08/2015 01:12:24">
+    <Property Name="ElementName" Value="[dbo].[Reference_Id]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc4a50dc-478b-44c3-a75d-c0bf9210106b" ChangeDateTime="08/08/2015 01:12:41">
+    <Property Name="ElementName" Value="[Reference].[Reference_Id]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[InternalId]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="32d3b651-df82-4e2c-92b2-719c96d6f1fd" ChangeDateTime="08/08/2015 01:13:09">
+    <Property Name="ElementName" Value="[dbo].[Reference_Name]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f05b1e8-1830-4ce4-a9f0-ae38952346fd" ChangeDateTime="08/08/2015 01:13:17">
+    <Property Name="ElementName" Value="[Reference].[Reference_Name]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Name]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="382095f7-9a8f-4fcb-8119-5920a8ce5f52" ChangeDateTime="08/08/2015 01:13:33">
+    <Property Name="ElementName" Value="[dbo].[Reference_Revision]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="91bd9678-742c-4cc7-9b1d-43c0d4f008ff" ChangeDateTime="08/08/2015 01:13:39">
+    <Property Name="ElementName" Value="[Reference].[Reference_Revision]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Revision]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="e0f8195e-aa01-4454-b651-b45b21cd4831" ChangeDateTime="08/08/2015 01:13:51">
+    <Property Name="ElementName" Value="[dbo].[Reference_Source]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6afa138c-4593-44b5-977b-94d766af3282" ChangeDateTime="08/08/2015 01:13:59">
+    <Property Name="ElementName" Value="[Reference].[Reference_Source]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Source]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="5205f685-0a9e-48e1-8a31-99613401e528" ChangeDateTime="08/08/2015 01:14:22">
+    <Property Name="ElementName" Value="[dbo].[Reference_Type]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f32da4d-fda7-4c6e-a604-f9e7fc0f3da8" ChangeDateTime="08/08/2015 01:14:28">
+    <Property Name="ElementName" Value="[Reference].[Reference_Type]" />
+    <Property Name="ElementType" Value="SqlScalarFunction" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Type]" />
+  </Operation>
+  <Operation Name="Move Schema" Key="749c1d52-581b-4f43-9cff-2a2faa239e13" ChangeDateTime="08/08/2015 01:14:50">
+    <Property Name="ElementName" Value="[dbo].[Armors]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="a69cff33-b510-4eb6-97a8-10be7a671759" ChangeDateTime="08/08/2015 01:15:03">
+    <Property Name="ElementName" Value="[dbo].[Class Features]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="a773545d-1b54-4394-bead-d40ae8ac57d3" ChangeDateTime="08/08/2015 01:24:46">
+    <Property Name="ElementName" Value="[dbo].[Classes]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="8a6eaad7-3900-4701-8213-252a3078fb1e" ChangeDateTime="08/08/2015 01:25:01">
+    <Property Name="ElementName" Value="[dbo].[Feats]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="443a3e7f-e329-4744-907a-cc139804cb8e" ChangeDateTime="08/08/2015 01:25:52">
+    <Property Name="ElementName" Value="[dbo].[Magic Items]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="53b8d40e-516a-453c-bac1-88d5a629988d" ChangeDateTime="08/08/2015 01:26:41">
+    <Property Name="ElementName" Value="[dbo].[Powers]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4e186d69-5de5-4c3e-8170-2b2e8ae5f6ce" ChangeDateTime="08/08/2015 01:26:52">
+    <Property Name="ElementName" Value="[dbo].[Races]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="2e6bd506-60b4-4c24-b7a9-c3556d60925b" ChangeDateTime="08/08/2015 01:28:00">
+    <Property Name="ElementName" Value="[dbo].[Rules]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="4ed313fc-63fe-4b3c-89fd-93fca1ec0d46" ChangeDateTime="08/08/2015 01:28:13">
+    <Property Name="ElementName" Value="[dbo].[Skills]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="cecb97c2-6fc7-442e-a438-d3369e36402b" ChangeDateTime="08/08/2015 01:28:23">
+    <Property Name="ElementName" Value="[dbo].[StatBlock]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Character" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="0cc809be-5e49-4dd2-881b-1aea7578ee71" ChangeDateTime="08/08/2015 01:28:33">
+    <Property Name="ElementName" Value="[dbo].[Superior Implements]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="413f1505-decf-4ea8-8123-304de4133152" ChangeDateTime="08/08/2015 01:28:44">
+    <Property Name="ElementName" Value="[dbo].[Weapons]" />
+    <Property Name="ElementType" Value="SqlView" />
+    <Property Name="NewSchema" Value="Reference" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="13f07e5d-cefa-488c-a13f-80aa8630000e" ChangeDateTime="08/08/2015 01:30:26">
+    <Property Name="ElementName" Value="[Reference].[Reference]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Base]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7c24aa6a-3898-4388-935c-07530a06b7da" ChangeDateTime="08/08/2015 01:32:12">
+    <Property Name="ElementName" Value="[Reference].[Base]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[Reference]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[References]" />
+  </Operation>
+</Operations>

@@ -1,6 +1,6 @@
 ﻿
 
-CREATE VIEW [dbo].[Superior Implements] WITH SCHEMABINDING AS SELECT
+CREATE VIEW [Reference].[Superior Implements] WITH SCHEMABINDING AS SELECT
 [Name],
 [Type],
 [Id],
@@ -17,7 +17,7 @@ Data.value('(/*/specific[@name="WeaponEquiv"])[1]', 'VARCHAR(MAX)') [WeaponEquiv
 Data.value('(/*/specific[@name="Weight"])[1]', 'VARCHAR(MAX)') [Weight],
 
 Data
-FROM dbo.Reference
+FROM [Reference].[References]
 WHERE Data.value('(/*/@type)[1]', 'VARCHAR(MAX)') = 'Superior Implement'
 
 

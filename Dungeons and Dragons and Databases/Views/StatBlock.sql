@@ -1,4 +1,4 @@
-﻿CREATE VIEW [dbo].[StatBlock]
+﻿CREATE VIEW [Character].[StatBlock]
 WITH SCHEMABINDING
 AS
 WITH [Stats] AS (
@@ -6,14 +6,14 @@ WITH [Stats] AS (
 		[Character-Name], 
 		CAST(Elements.query('data(alias[1]/@name)') AS varchar(MAX) ) AS [Stat-Name], 
 		Elements.query('.') [Breakdown]
-	FROM dbo.Characters
+	FROM [Character].Characters
 	CROSS APPLY Blob.nodes('//StatBlock/*') AS Blob(Elements) 
 ), [Elements] AS (
 	SELECT 
 		[Character-Name], 
 		Elements.query('data(@name)') AS [Element-Name], 
 		Elements.value('data(@charelem)', 'VARCHAR(MAX)') AS [charelem] 
-	FROM dbo.Characters
+	FROM [Character].Characters
 	CROSS APPLY Blob.nodes('//*[self::RulesElementTally or self::LootTally]//RulesElement') AS Blob(Elements) 
 )
 SELECT 
