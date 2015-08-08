@@ -7,11 +7,7 @@ WITH [Stats] AS (
 		[Modified],
 		CAST(Elements.query('data(alias[1]/@name)') AS varchar(MAX) ) AS [Stat-Name], 
 		CAST(Elements.query('data(@value)') AS varchar(MAX) ) AS [Stat-Total], 
-		Elements.query('.') [Breakdown],
-		ROW_NUMBER() OVER (
-			PARTITION BY COALESCE([Character-Name], [Name]), [Modified], CAST(Elements.query('data(alias[1]/@name)') AS varchar(MAX) )
-			ORDER BY ( SELECT NULL )
-		) [Row-Number]
+		Elements.query('.') [Breakdown]
 	FROM [Character].Characters
 	CROSS APPLY Blob.nodes('//StatBlock/*') AS Blob(Elements) 
 ), [Elements] AS (
@@ -39,7 +35,10 @@ SELECT
 	CASE 
 		WHEN statadd.exist('data(@type)') = 1
 			THEN statadd.query('data(@type)') 
-		ELSE 'Untyped ' + CAST( [Stats].[Row-Number] AS VARCHAR(10) )
+		ELSE 'Untyped ' + CAST( ROW_NUMBER() OVER (
+			PARTITION BY [Stats].[Character-Name], [Stats].[Modified], [Stats].[Stat-Name] 
+			ORDER BY ( SELECT NULL )
+		) AS VARCHAR(10) )
 	END AS [Type],
 	CASE
 		WHEN statadd.exist('data(@charelem)') = 1 
