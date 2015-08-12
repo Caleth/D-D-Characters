@@ -39,9 +39,9 @@ SELECT
 	statadd.query('data(@wearing), data(@requires[substring(., 1, 1) != ''!''])') AS Requires,
 	statadd.query('data(@not-wearing), data(substring(@requires[substring(., 1, 1) = ''!''], 2))') AS Rejects,
 	statadd.query('data(@conditional)') AS Conditional
-FROM [Character].[StatBlock] [Stats]
+FROM [Character].[Statblock] [Stats]
 CROSS APPLY Breakdown.nodes('/Stat/statadd') AS Breakdown(statadd)
-LEFT JOIN [Character].[StatBlock] [lookup] 
+LEFT JOIN [Character].[Statblock] [lookup] 
 	ON [lookup].[CharName] = [Stats].[CharName] 
 	AND [lookup].[Modified] = [Stats].[Modified]
 	AND [lookup].[StatName] = statadd.value('./@statlink', 'VARCHAR(MAX)')
